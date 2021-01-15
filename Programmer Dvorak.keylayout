@@ -51,17 +51,16 @@
 	<layout first="206" last="207" modifiers="modifiers" mapSet="JIS"  />
   </layouts>
   <modifierMap id="modifiers" defaultIndex="0">
-	<!-- no modifiers -->
+	<!-- no modifiers, except perhaps command -->
 	<keyMapSelect mapIndex="0">
-	  <modifier keys="" />
-	  <modifier keys="command anyShift? caps?" />
+	  <modifier keys="command?" />
 	</keyMapSelect>
 	<!-- shift -->
 	<keyMapSelect mapIndex="1">
-	  <modifier keys="anyShift" />
+	  <modifier keys="command? anyShift" />
 	</keyMapSelect>
 	<keyMapSelect mapIndex="2">
-	  <modifier keys="caps" />
+	  <modifier keys="command? caps" />
 	</keyMapSelect>
 	<keyMapSelect mapIndex="3">
 	  <modifier keys="anyShift caps" />
@@ -1222,6 +1221,7 @@
 	  <when state="circum" 		output="&#xC2;" />
 	  <when state="nasal" 		output="&#xC3;" />
 	  <when state="diaeresis" 	output="&#xC4;" />
+	  <when state="tuttel" 		output="&#xC4;" />
 	  <when state="macron"		output="&#x0100;" />
 	  <when state="ring"		output="&#xC5;" />
 	  <when state="alig"		output="&#xC5;" />
@@ -1232,6 +1232,7 @@
 	  <when state="acute" 		output="&#xC9;" />
 	  <when state="circum" 		output="&#xCA;" />
 	  <when state="diaeresis" 	output="&#xCB;" />
+	  <when state="tuttel" 		output="&#xCB;" />
 	  <when state="alig"		output="&#xC6;" />
 	</action>
 	<action id="I">
@@ -1240,6 +1241,7 @@
 	  <when state="acute" 		output="&#xCD;" />
 	  <when state="circum" 		output="&#xCE;" />
 	  <when state="diaeresis" 	output="&#xCF;" />
+	  <when state="tuttel" 		output="&#xCF;" />
 	</action>
 	<action id="O">
 	  <when state="none" 		output="O" />
@@ -1249,6 +1251,7 @@
 	  <when state="circum" 		output="&#xD4;" />
 	  <when state="nasal" 		output="&#xD5;" />
 	  <when state="diaeresis" 	output="&#xD6;" />
+	  <when state="tuttel" 		output="&#xD6;" />
 	  <when state="stroke"		output="&#xD8;" />
 	  <when state="caron"       output="&#xA9;" />
 	</action>
@@ -1258,6 +1261,7 @@
 	  <when state="acute" 		output="&#xDA;" />
 	  <when state="circum" 		output="&#xDB;" />
 	  <when state="diaeresis" 	output="&#xDC;" />
+	  <when state="tuttel" 		output="&#xDC;" />
 	</action>
 	<action id="a">
 	  <when state="none" 		output="a" />
@@ -1267,6 +1271,7 @@
 	  <when state="circum" 		output="&#xE2;" />
 	  <when state="nasal" 		output="&#xE3;" />
 	  <when state="diaeresis" 	output="&#xE4;" />
+	  <when state="tuttel" 		output="&#xE4;" />
 	  <when state="macron"		output="&#x0101;" />
 	  <when state="ring"		output="&#xE5;" />
 	  <when state="alig"		output="&#xE5;" />
@@ -1277,6 +1282,7 @@
 	  <when state="acute" 		output="&#xE9;" />
 	  <when state="circum" 		output="&#xEA;" />
 	  <when state="diaeresis" 	output="&#xEB;" />
+	  <when state="tuttel" 		output="&#xEB;" />
 	  <when state="alig"		output="&#xE6;" />
 	</action>
 	<action id="i">
@@ -1285,6 +1291,7 @@
 	  <when state="acute" 		output="&#xED;" />
 	  <when state="circum" 		output="&#xEE;" />
 	  <when state="diaeresis" 	output="&#xEF;" />
+	  <when state="tuttel" 		output="&#xEF;" />
 	</action>
 	<action id="o">
 	  <when state="none" 		output="o" />
@@ -1294,6 +1301,7 @@
 	  <when state="circum" 		output="&#xF4;" />
 	  <when state="nasal" 		output="&#xF5;" />
 	  <when state="diaeresis" 	output="&#xF6;" />
+	  <when state="tuttel" 		output="&#xF6;" />
 	  <when state="stroke"		output="&#xF8;" />
 	  <when state="caron"       output="&#xA9;" />
 	</action>
@@ -1303,6 +1311,7 @@
 	  <when state="acute" 		output="&#xFA;" />
 	  <when state="circum" 		output="&#xFB;" />
 	  <when state="diaeresis" 	output="&#xFC;" />
+	  <when state="tuttel" 		output="&#xFC;" />
 	</action>
 	<action id="Y">
 	  <when state="none" 		output="Y" />
@@ -1312,6 +1321,7 @@
 	  <when state="none" 		output="y" />
 	  <when state="acute" 		output="&#xFD;" />
 	  <when state="diaeresis" 	output="&#xFF;" />
+	  <when state="tuttel" 		output="&#xFF;" />
 	</action>
 	<action id="C">
 	  <when state="none" 		output="C" />
@@ -1361,12 +1371,12 @@
 	</action>
 	<action id="T">
 	  <when state="none" 		output="T" />
-	  <when state="compose"		next="thorn" />
+	  <when state="compose"		next="tuttel" />
 	  <when state="dot"			output="&#x021A;" />
 	</action>
 	<action id="t">
 	  <when state="none" 		output="t" />
-	  <when state="compose"		next="thorn" />
+	  <when state="compose"		next="tuttel" />
 	  <when state="dot"			output="&#x021B;" />
 	</action>
 	<action id="D">
@@ -1391,9 +1401,13 @@
 	</action>
 	<action id="H">
 	  <when state="none" 		output="H" />
+	  <when state="compose"		next="acute" />
+	  <when state="tuttel" 		output="&#xDE;" /><!-- thorn -->
 	</action>
 	<action id="h">
 	  <when state="none" 		output="h" />
+	  <when state="compose"		next="acute" />
+	  <when state="tuttel" 		output="&#xFE;" /><!-- thorn -->
 	</action>
 	<action id="J">
 	  <when state="none" 		output="J" />
@@ -1403,7 +1417,7 @@
 	</action>
 	<action id="M">
 	  <when state="none" 		output="M" />
-	  <when state="thorn"       output="&#x2122;" />
+	  <when state="tuttel"  	output="&#x2122;" /><!-- trademark -->
 	</action>
 	<action id="m">
 	  <when state="none"		output="m" />
@@ -1416,12 +1430,14 @@
 	  <when state="none"		output="&#x3C;" />
 	  <when state="compose"		next="less" />
 	  <when state="diaeresis"	output="&#x201C;" />
+	  <when state="tuttel" 		output="&#x201C;" />
 	  <when state="acute"		output="&#x2018;" />
 	</action>
 	<action id="greater">
 	  <when state="none"		output=">" />
 	  <when state="compose"		next="greater" />
 	  <when state="diaeresis"	output="&#x201D;" />
+	  <when state="tuttel" 		output="&#x201D;" />
 	  <when state="acute"		output="&#x2019;" />
 	</action>
 	<!-- dead key actions; go straight to a state and wait for key -->
@@ -1460,7 +1476,7 @@
 	  <when state="dot" 		output="." />
 	  <when state="alig" 		output="a" />
 	  <when state="eth" 		output="e" />
-	  <when state="thorn" 		output="t" />
+	  <when state="tuttel" 		output="t" />
 	  <when state="ssharp" 		output="s" />
 	  <when state="less"		output="&#x3C;" />
 	  <when state="greater"		output=">" />
@@ -1482,7 +1498,7 @@
 	<when state="dot"			output="&#x02D9;" />
 	<when state="alig"			output="a" />
 	<when state="eth"			output="d" />
-	<when state="thorn"			output="t" />
+	<when state="tuttel"			output="t" />
 	<when state="ssharp"		output="s" />
 	<when state="less"			output="&#x3C;" />
 	<when state="greater"		output=">" />

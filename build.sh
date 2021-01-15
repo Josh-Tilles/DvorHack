@@ -3,7 +3,7 @@ set -e -x
 LAYOUT="Programmer Dvorak"
 LANGUAGE=en
 VERSION=1.2
-COPYRIGHT="Copyright 1997--2019 (c) Roland Kaufmann"
+COPYRIGHT="Copyright 1997--2020 (c) Roland Kaufmann"
 
 # copy files from where this script is located
 pushd $(dirname $0)
