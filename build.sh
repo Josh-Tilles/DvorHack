@@ -3,7 +3,7 @@ set -e -x
 LAYOUT="DvorHack"
 LANGUAGE=en
 VERSION=1.2
-COPYRIGHT="Copyright 1997--2019 (c) Roland Kaufmann (sans the fiddlings by Josh Tilles. Who knows what the legal status of those should be.)"
+COPYRIGHT="Copyright 1997--2020 (c) Roland Kaufmann (sans the fiddlings by Josh Tilles. Who knows what the legal status of those should be.)"
 
 # copy files from where this script is located
 pushd $(dirname $0)
