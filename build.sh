@@ -3,7 +3,7 @@ set -e -x
 LAYOUT="Programmer Dvorak"
 LANGUAGE=en
 VERSION=1.2
-COPYRIGHT="Copyright 1997--2020 (c) Roland Kaufmann"
+COPYRIGHT="Copyright 1997--2022 (c) Roland Kaufmann"
 
 # copy files from where this script is located
 pushd $(dirname $0)
@@ -36,6 +36,7 @@ cat >> "$LAYOUT.bundle/Contents/Info.plist" <<EOF
   <dict>
   <key>TISInputSourceID</key><string>com.apple.keyboardlayout.$LAYOUT</string>
   <key>TISIntendedLanguage</key><string>$LANGUAGE-Latn</string>
+  <!--key>TICapsLockLanguageSwitchCapable</key><true/-->
   </dict>
 </dict>
 </plist>

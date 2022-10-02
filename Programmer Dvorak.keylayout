@@ -2,7 +2,7 @@
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
 <keyboard group="0" id="6454" name="Programmer Dvorak" maxout="1">
   <layouts>
-	<!-- http://developer.apple.com/library/mac/documentation/Carbon/Reference/Gestalt_Manager/Reference/reference.html#//apple_ref/doc/uid/TP30000036-CH4g-KeyboardSelectors -->
+	<!-- https://developer.apple.com/documentation/coreservices/1471510-keyboard_selectors/ -->
 	<!-- identifiers in Gestalt.h has been used to determine the type of
 	     the keyboard. the table given as example in TN2056 is different,
 	     but on the other hand, that technote also claimed that ANSI
@@ -1327,11 +1327,13 @@
 	  <when state="none" 		output="C" />
 	  <when state="compose"		next="caron" />
 	  <when state="cedilla" 	output="&#xC7;" />
+	  <when state="caron"   	output="&#x010C;" />
 	</action>
 	<action id="c">
 	  <when state="none" 		output="c" />
 	  <when state="compose"		next="caron" />
 	  <when state="cedilla" 	output="&#xE7;" />
+	  <when state="caron"   	output="&#x010D;" />
 	</action>
 	<action id="N">
 	  <when state="none" 		output="N" />
