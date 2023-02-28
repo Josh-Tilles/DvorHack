@@ -1,7 +1,7 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
-<!--Last edited by Ukelele version 359 on 2023-02-28 at 12:15 (EST)-->
-<keyboard group="126" id="-15670" name="DvorHack" maxout="1">
+<!--Last edited by Ukelele version 359 on 2023-02-28 at 13:05 (EST)-->
+<keyboard group="126" id="-12308" name="DvorHack" maxout="1">
     <layouts>
         <!-- http://developer.apple.com/library/mac/documentation/Carbon/Reference/Gestalt_Manager/Reference/reference.html#//apple_ref/doc/uid/TP30000036-CH4g-KeyboardSelectors -->
         <!-- identifiers in Gestalt.h has been used to determine the type of
@@ -459,6 +459,7 @@
             <!--*-->
             <key code="78" output="$"/>
             <!-- Num - 			-->
+            <key code="81" output=""/>
             <key code="82" output="\"/>
             <!-- Num 0 			-->
             <key code="83" output="="/>
@@ -1743,6 +1744,7 @@
             <!-- ctrl-D		 	-->
             <key code="5" output="&#x0009;"/>
             <!-- ctrl-I		 	-->
+            <key code="6" output=""/>
             <key code="7" output="&#x0011;"/>
             <!-- ctrl-Q			-->
             <key code="8" output="&#x000A;"/>
@@ -1751,12 +1753,16 @@
             <!-- ctrl-K		 	-->
             <key code="11" output="&#x0018;"/>
             <!-- ctrl-X		 	-->
+            <key code="12" output=""/>
+            <key code="13" output=""/>
+            <key code="14" output=""/>
             <key code="15" output="&#x0010;"/>
             <!-- ctrl-P		 	-->
             <key code="16" output="&#x0006;"/>
             <!-- ctrl-F		 	-->
             <key code="17" output="&#x0019;"/>
             <!-- ctrl-Y		 	-->
+            <key code="18" output=""/>
             <key code="19" output="&#x001B;"/>
             <!-- ctrl-[			-->
             <key code="20" output="5"/>
@@ -1767,6 +1773,7 @@
             <!-- left index 2   -->
             <key code="23" output="1"/>
             <!-- left index 1   -->
+            <key code="24" output=""/>
             <key code="25" output="4"/>
             <!-- right middle   -->
             <key code="26" action="zero"/>
@@ -1785,10 +1792,12 @@
             <!-- ctrl-R		 	-->
             <key code="32" output="&#x0007;"/>
             <!-- ctrl-G		 	-->
+            <key code="33" output=""/>
             <key code="34" output="&#x0003;"/>
             <!-- ctrl-C			-->
             <key code="35" output="&#x000C;"/>
             <!-- ctrl-L		 	-->
+            <key code="36" output=""/>
             <key code="37" output="&#x000E;"/>
             <!-- ctrl-N		 	-->
             <key code="38" output="&#x0008;"/>
@@ -1812,8 +1821,54 @@
             <!-- ctrl-M		 	-->
             <key code="47" output="&#x0016;"/>
             <!-- ctrl-V		 	-->
+            <key code="48" output=""/>
+            <key code="49" output=""/>
             <key code="51" output="&#x007F;"/>
             <!-- ctrl-Backspace -->
+            <key code="53" output=""/>
+            <key code="65" output=""/>
+            <key code="67" output=""/>
+            <key code="69" output=""/>
+            <key code="71" output=""/>
+            <key code="75" output=""/>
+            <key code="76" output=""/>
+            <key code="78" output=""/>
+            <key code="81" output=""/>
+            <key code="82" output=""/>
+            <key code="83" output=""/>
+            <key code="84" output=""/>
+            <key code="85" output=""/>
+            <key code="86" output=""/>
+            <key code="87" output=""/>
+            <key code="88" output=""/>
+            <key code="89" output=""/>
+            <key code="91" output=""/>
+            <key code="92" output=""/>
+            <key code="96" output=""/>
+            <key code="97" output=""/>
+            <key code="98" output=""/>
+            <key code="99" output=""/>
+            <key code="100" output=""/>
+            <key code="101" output=""/>
+            <key code="103" output=""/>
+            <key code="105" output=""/>
+            <key code="107" output=""/>
+            <key code="109" output=""/>
+            <key code="111" output=""/>
+            <key code="113" output=""/>
+            <key code="114" output=""/>
+            <key code="115" output=""/>
+            <key code="116" output=""/>
+            <key code="117" output=""/>
+            <key code="118" output=""/>
+            <key code="119" output=""/>
+            <key code="120" output=""/>
+            <key code="121" output=""/>
+            <key code="122" output=""/>
+            <key code="123" output=""/>
+            <key code="124" output=""/>
+            <key code="125" output=""/>
+            <key code="126" output=""/>
         </keyMap>
     </keyMapSet>
     <keyMapSet id="ISO">
